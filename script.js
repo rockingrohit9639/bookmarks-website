@@ -29,8 +29,8 @@ form.addEventListener("submit", (e) =>
     }
 
     bookmarksObj.push(data);
-    localStorage.setItem("bookmarks", JSON.stringify(bookmarksObj));
-    // localStorage.clear();
+    // localStorage.setItem("bookmarks", JSON.stringify(bookmarksObj));
+    localStorage.clear();
 
     title.value = "";
     desc.value = "";

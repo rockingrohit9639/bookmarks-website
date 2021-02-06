@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ms-main: rgba(36, 58, 94, 0.904);
+  --ms-bg: rgb(210, 210, 210);
+}
+
+body {
+  background-color: var(--ms-bg);
+}
+
+.navbar {
+  height: 4rem;
+  background-color: var(--ms-main);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.main {
+  height: 91vh;
+  display: flex;
+}
+
+.main__left {
+  height: 100%;
+  width: 70%;
+  padding: 5px;
+}
+
+.main__right {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.inputValues {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  position: fixed;
+}
+
+.inputValues h1 {
+  font-size: 100%;
+  font-weight: 800;
+  margin-top: 10px;
+  color: var(--ms-main);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input {
+  padding: 10px 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.input:active,
+.input:focus {
+  outline: none;
+}
+
+.formBtn {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--ms-main);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.formBtn:hover {
+  box-shadow: 0 5px 10px -8px var(--ms-main);
+}
+
+.returnBtn{
+  margin-top: 4rem;
+  border: none;
+  outline: none;
+  background: var(--ms-main);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card {
+  min-height: 10rem;
+  width: 14rem;
+  height: 12rem;
+  background-color: var(--ms-main);
+  color: rgba(255, 255, 255, 0.925);
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 5px;
+  box-shadow: 0 10px 11px -8px var(--ms-main);
+  border-radius: 5px;
+  margin-top: 1rem;
+  overflow-y: auto;
+}
+
+.card::-webkit-scrollbar{
+  display: none;
+}
+
+
+.card__content a {
+  position: relative;
+  bottom: 3px;
+  margin-top: 1rem;
+  float: right;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--ms-main);
+  text-decoration: none;
+}
+
+.card__title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.card__content p {
+  margin-top: 15px;
+}

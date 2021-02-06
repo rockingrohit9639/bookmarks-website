@@ -2,39 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title> Getting Started With Web Development </title>
+    <link rel="icon" href="img/page_logo.jfif" />
     <link rel="stylesheet" href="style.css" />
-    <title>Bookmarks | Home</title>
   </head>
+
   <body>
-    <nav class="navbar">
-      <div class="navbar__left">
-        <h2>Bookmarks</h2>
+    <section class="body">
+      <div class="body__inner">
+        <img class="logo" src="img/msla_logo.png" alt=" MSLA LOGO" />
+        <h1 class="event_heading">GETTING STARTED WITH WEB DEVELOPMENT</h1>
+        <span class="subheading"> &rarr;MLSA</span>
+
+        <div class="content">
+         
+
+          <div class="card card-MLSA">
+            <h3>MLSA</h3>
+            <p class="para">
+              Know more about Microsoft Learn Student Ambassador.
+              <br><br>What is it and how to be?
+            </p>
+            <a href="https://studentambassadors.microsoft.com/#" class="button_card mlsa">go</a>
+          </div>
+
+          <div class="card card-about">
+            <h3>About Us</h3>
+            <p class="para">
+              <a href="">Rohit Kumar Saini</a><br><br>
+              <a href="">Guru Charan</a>
+            </p>
+
+
+            <!-- <a href="" class="button_card"> go</a> -->
+          </div>
+
+          <div class="card card-Event_project">
+            <h3>Event Project</h3>
+            <p class="para">
+              The Project that we are going to create in this event.
+            </p>
+            <a href="/bookmarks.html" class="button_card project">go</a>
+          </div>
+        </div>
       </div>
-    </nav>
-
-    <section class="main">
-
-      <div class="main__left" id="mainDiv">
-      
-      </div>
-
-      <div class="main__right">
-
-          <form action="" id="form" class="inputValues">
-
-            <h1> Add new Bookmark </h1>
-            
-            <input type="text" class="input" name="title" id="title" autocomplete="off" placeholder="Title" required/>
-            <textarea type="text" class="input" name="desc" id="desc" placeholder="Description"></textarea>
-            <input type="text" class="input" name="url" id="url" autocomplete="off" placeholder="URL" required/>
-
-            <button class="formBtn">Add</button>
-          </form>
-
-      </div>
-
     </section>
-    <script src="script.js"></script>
   </body>
 </html>
