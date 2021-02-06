@@ -4,12 +4,14 @@
 }
 
 :root {
-  --ms-main: rgba(36, 58, 94, 0.904);
+  --ms-main: rgba(36, 58, 94, 0.96);
   --ms-bg: rgb(210, 210, 210);
+  --ms-secondary: rgba(0, 120, 212, 0.9);
 }
 
 body {
   background-color: var(--ms-bg);
+  
 }
 
 .navbar {
@@ -98,7 +100,7 @@ body {
 .card {
   min-height: 10rem;
   width: 14rem;
-  height: 12rem;
+  height: 10rem;
   background-color: var(--ms-main);
   color: rgba(255, 255, 255, 0.925);
   display: inline-block;
@@ -108,6 +110,15 @@ body {
   border-radius: 5px;
   margin-top: 1rem;
   overflow-y: auto;
+  margin-right: 10px;
+}
+
+.lightBlue{
+  background-color: rgba(0, 120, 212, 0.8);
+}
+
+.darkBlue{
+  background-color: rgba(36, 58, 94, 0.8);
 }
 
 .card::-webkit-scrollbar{
