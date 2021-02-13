@@ -125,25 +125,23 @@ body {
   display: none;
 }
 
-
-.card__content a {
-  position: relative;
-  bottom: 3px;
-  margin-top: 1rem;
-  float: right;
-  outline: none;
-  border: none;
-  padding: 5px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  background-color: #fff;
-  color: var(--ms-main);
+.card_link {
   text-decoration: none;
+  color: #fff;
 }
 
 .card__title {
   padding-bottom: 10px;
   border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.card__title span{
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .card__content p {

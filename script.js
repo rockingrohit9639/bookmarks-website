@@ -53,18 +53,19 @@ function showBookmarks()
 
     let html = "";
 
-    if (bookmarksObj.length > 0)
+    if (bookmarksObj.length >= 0)
     {
         bookmarksObj.forEach((el, i) =>
         {
             html += `
+            
             <div class="card ${ i % 2 === 0 ? "darkBlue" : "lightBlue" }">
           <div class="card__title">
-            <h4> ${ el.title } </h4>
+          <a class="card_link"  href="${ el.url }" target="_blank"> <h5> ${ el.title } </h5> </a>
+            <span id=${ i } onClick="delete_bookmark(this.id)"> &times; </span>
           </div>
           <div class="card__content">
             <p> ${ el.desc } </p>
-            <a href="${ el.url }" target="_blank"> Go </a>
           </div>
         </div>
             `;
@@ -73,4 +74,25 @@ function showBookmarks()
         let mainDiv = document.getElementById("mainDiv");
         mainDiv.innerHTML = html;
     }
+}
+
+
+function delete_bookmark(id)
+{
+    let bookmarks = localStorage.getItem("bookmarks");
+
+    if (bookmarks.length === 0)
+    {
+        bookmarksObj = [];
+    }
+    else
+    {
+        bookmarksObj = JSON.parse(bookmarks);
+    }
+
+    bookmarksObj.splice(id, 1);
+    localStorage.setItem("bookmarks", JSON.stringify(bookmarksObj));
+
+    showBookmarks();
+
 }
