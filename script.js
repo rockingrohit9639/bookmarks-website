@@ -61,7 +61,7 @@ function showBookmarks()
             
             <div class="card ${ i % 2 === 0 ? "darkBlue" : "lightBlue" }">
           <div class="card__title">
-          <a class="card_link"  href="${ el.url }" target="_blank"> <h5> ${ el.title } </h5> </a>
+          <a class="card_link"  href="${ el.url }" target="_blank"> <h3> ${ el.title } </h3> </a>
             <span id=${ i } onClick="delete_bookmark(this.id)"> &times; </span>
           </div>
           <div class="card__content">

@@ -54,9 +54,14 @@
   color: #efefef;
 }
 
+.card a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .para {
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .para a {
@@ -64,7 +69,7 @@
   color: #fff;
 }
 
-.card h3 {
+.card h2 {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.438);
   margin-bottom: 1.5rem;
   padding-bottom: 5px;
@@ -84,17 +89,6 @@
 
 .card-Event_project {
   background-color: var(--ms-main);
-}
-
-.button_card {
-  text-decoration: none;
-  text-transform: capitalize;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background-color: #efefef;
-  padding: 10px 20px;
-  border-radius: 10px;
 }
 
 .mlsa {
