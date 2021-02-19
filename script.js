@@ -8,11 +8,13 @@ let form = document.getElementById("form");
 form.addEventListener("submit", (e) =>
 {
     e.preventDefault();
+
     let title = document.getElementById("title");
     let desc = document.getElementById("desc");
     let url = document.getElementById("url");
 
     let bookmarks = localStorage.getItem("bookmarks");
+
     if (bookmarks == null)
     {
         bookmarksObj = [];
@@ -90,9 +92,11 @@ function delete_bookmark(id)
         bookmarksObj = JSON.parse(bookmarks);
     }
 
-    bookmarksObj.splice(id, 1);
-    localStorage.setItem("bookmarks", JSON.stringify(bookmarksObj));
+    if (bookmarksObj.length > 0)
+    {
+        bookmarksObj.splice(id, 1);
+        localStorage.setItem("bookmarks", JSON.stringify(bookmarksObj));
+    }
 
     showBookmarks();
-
 }
